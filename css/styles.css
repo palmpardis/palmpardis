@@ -8399,7 +8399,7 @@ textarea.form-control-lg {
 }
 
 .mt-5 {
-    margin-top: 3rem !important;
+    margin-top: 1.1rem !important;
 }
 
 .mt-auto {
@@ -12618,4 +12618,8 @@ header.masthead h1, header.masthead .h1 {
     mix-blend-mode: luminosity;
     font-style: italic;
     font-size: 1.5rem;
+}
+
+.text-cent {
+    text-align: justify !important;
 }
