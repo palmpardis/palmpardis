@@ -8455,7 +8455,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-    margin-bottom: 3rem !important;
+    margin-bottom: 2.5rem !important;
 }
 
 .mb-auto {
@@ -8882,7 +8882,7 @@ textarea.form-control-lg {
 
 .text-muted {
     --bs-text-opacity: 1;
-    color: #6c757d !important;
+    color: #2c442a !important;
 }
 
 .text-black-50 {
@@ -12431,7 +12431,7 @@ body {
 }
 
 .page-section {
-    padding: 6rem 0;
+    padding: 5.7rem 0;
 }
 
 .text-white-75 {
@@ -12448,11 +12448,12 @@ body {
 }
 
 hr.divider {
-    height: 0.2rem;
-    max-width: 3.25rem;
-    margin: 1.5rem auto;
+    height: 0.21rem;
+    max-width: 5rem;
     background-color: #406346;
     opacity: 1;
+    margin: 1rem auto;
+    margin-bottom: 0.8rem auto;
 }
 
 hr.divider-light {
@@ -12466,7 +12467,7 @@ hr.divider-light {
 }
 
 #mainNav .navbar-brand {
-    font-family:"Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 700;
     color: #212529;
     font-size: 1.8rem;
