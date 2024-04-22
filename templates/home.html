@@ -1,0 +1,486 @@
+{#{% extends 'base.html' %}#}
+{##}
+{#{% block content %}#}
+{#    <div class="container">#}
+{#    </div>#}
+{#    <span>HOME</span>#}
+{#{% endblock %}#}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Palm Pardis</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href={% static "img/favicon.png" %}/>
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+          rel="stylesheet" type="text/css"/>
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static "css/styles.css" %}" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200;1,200&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top"><img src="{% static "img/logo-wh.png" %}" width="90" height="90"
+                                                      class="img-fluid"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <img src="{% static "img/brand.png" %}" class="img-fluid" width="435" style="mix-blend-mode: hard-light">
+            </div>
+            <div class="col-lg-5 align-self-baseline">
+                <p class="text-white-75 text-bg-white mb-5 text-sub">plant a tree, plant a life</p>
+                <a class="btn btn-primary btn-xl" style="background: limegreen;" href="#about">Find Out More</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- About-->
+<section class="page-section bg-primary" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">You've come to the right place!</h2>
+                <hr class="divider divider-light"/>
+                <p class="text-white-75 mb-4 text-cent">After years of experience, efforts and research, this group
+                    managed to
+                    save and return to the environment 25 meters high and 3 meters diameter and 350 years old trees that
+                    were threatened and destroyed. Now, he is proud to transport any type of tree and any size from one
+                    place to another and guarantee the survival and health of that tree.</p>
+                <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="mt-5">
+                    <img class="img-fluid" src="{% static "img/circle2.png" %}" alt="..."/>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="container px-4 px-lg-5">
+                        <h2 class="text-center mt-0">17,000 trees survived</h2>
+                        <hr class="divider"/>
+                        <p class="text-dark text-cent fw-bold h3 mb-2">A mature tree produces oxygen for
+                            three people in a year</p>
+                        <div class="row gx-4 gx-lg-5">
+                            <div class="col-lg-12 col-md-12 text-center">
+                                <div class="mt-5">
+                                    <p class="text-muted text-cent mb-0">
+                                        Nowadays, due to the constructions and
+                                        expansion of cities, trees are exposed to destruction and destruction. Paying
+                                        attention to the importance of the issue that trees play a very important role
+                                        in preserving nature and human life, made the Palm campus group conduct its
+                                        research to save the trees that are in the way of constructions, the boundaries
+                                        of roads and highways, and the trees that were planted due to the change in the
+                                        type of crops. (including fruitful and non-fruitful trees) or change of use and
+                                        division of inheritance in gardens that are subject to destruction.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Services-->
+<section class="page-section bg-secondary" id="services">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="container px-4 px-lg-5">
+                        <h2 class="text-center text-white mt-0">Our Services</h2>
+                        <hr class="divider"/>
+                        <div class="row gx-4 gx-lg-5">
+                            <div class="col-lg-12 col-md-12 text-center">
+                                <div class="mt-5">
+                                    <p class="text-white text-cent mb-0">Supplying tall trees (between 50-400) that were
+                                        destroyed
+                                        during construction and replacing them in place - Supplying and planting large
+                                        trees in parks, squares, streets, markets and residential and public areas and
+                                        changing the face of urban green spaces In the shortest time - moving,
+                                        transferring, growing and reviving old trees - saving part of the trees that are
+                                        at risk of destruction due to construction and turning it into a new opportunity
+                                        to continue life at the national level and in different climates</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="mt-5">
+                    <img class="img-fluid" src="{% static "img/services.png" %}" alt="..."/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="mt-5">
+                    <img class="img-fluid" src="{% static "img/circle1.png" %}" alt="..."/>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center" style="background: #b5d573;">
+                <div class="mt-5">
+                    <div class="container px-4 px-lg-5">
+                        <h2 class="text-center mt-0 text-dark" style="color: #03210a;">+17,000 trees survived</h2>
+                        <hr class="divider"/>
+                        <div class="row gx-4 gx-lg-5">
+                            <div class="col-lg-12 col-md-12 text-center">
+                                <div class="mt-5">
+                                    <h5 class="text-white text-cent fw-bold h3 mb-2">A mature tree produces oxygen for
+                                        three people in a year</h5>
+                                    <p class="text-white  text-cent mb-0">
+                                        Green wall with special types of hedge
+
+                                        Planting design - an expert in the selection of plant species according to the
+                                        climatic conditions and the needs of the designers (we will come to suggest
+                                        according to the available space and the type of pots and materials used) (using
+                                        horticultural knowledge - design and selection of plant species according to the
+                                        conditions climate and planting them - this stage is part of the design process)
+
+                                        Supplying fruit trees (apples, pears, tropical citrus fruits, pomegranates,
+                                        etc.)
+
+                                        In order to preserve your (vital) trees during the construction operation, we
+                                        can transfer them to one of the Palm Campus collections (to the place where they
+                                        are going to be recovered or restored and kept there) and after the completion
+                                        of the project to the main place. We will return
+
+                                        More general services - supply of special houseplants
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container px-4 px-lg-5 bg-green">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="container px-4 px-lg-5">
+                        <h3 class="text-center mt-0">trees that fly, but don't die</h3>
+                        <hr class="divider"/>
+                        <div class="row gx-4 gx-lg-5">
+                            <div class="col-lg-12 col-md-12 text-center">
+                                <div class="mt-5">
+
+                                    <p class="text-white text-cent mb-0">Green wall with special types of hedge
+
+                                        Planting design - an expert in the selection of plant species according to the
+                                        climatic conditions and the needs of the designers (we will come to suggest
+                                        according to the available space and the type of pots and materials used) (using
+                                        horticultural knowledge - design and selection of plant species according to the
+                                        conditions climate and planting them - this stage is part of the design process)
+
+                                        Supplying fruit trees (apples, pears, tropical citrus fruits, pomegranates,
+                                        etc.)
+
+                                        In order to preserve your (vital) trees during the construction operation, we
+                                        can transfer them to one of the Palm Campus collections (to the place where they
+                                        are going to be recovered or restored and kept there) and after the completion
+                                        of the project to the main place. We will return
+
+                                        More general services - supply of special houseplants</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="mt-5">
+                    <img class="img-fluid" src="{% static "img/circle3.png" %}" alt="..."/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="services">
+
+</section>
+<!-- Portfolio-->
+<div id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static "img/sp1.JPG" %}" title="Project Name">
+                    <img class="img-fluid" src="{% static "img/sp1.JPG" %}" alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static "img/sp2.JPG" %}" title="Project Name">
+                    <img class="img-fluid" src="{% static "img/sp2.JPG" %}" alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static "img/sp3.JPG" %}" title="Project Name">
+                    <img class="img-fluid" src="{% static "img/sp3.JPG" %}" alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static "img/sp4.JPG" %}" title="Project Name">
+                    <img class="img-fluid" src="{% static "img/sp4.JPG" %}" alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static "img/sp5.JPG" %}" title="Project Name">
+                    <img class="img-fluid" src="{% static "img/sp5.JPG" %}" alt="..."/>
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static "img/sp6.JPG" %}" title="Project Name">
+                    <img class="img-fluid" src="{% static "img/sp6.JPG" %}" alt="..."/>
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Call to action-->
+<section class="page-section bg-dark text-white">
+    <div class="container px-4 px-lg-5 text-center">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-5 col-md-5 text-center">
+                <div class="mt-5">
+                    <img class="img-fluid" src="{% static "img/top.png" %}" alt="..."/>
+                </div>
+            </div>
+            <div class="col-lg-7 col-xl-7 text-center">
+                <h2 class="text-center mt-0">Oxygen Consumption</h2>
+                <hr class="divider"/>
+                <p class="text-cent">
+                    If we were to pay for the oxygen consumption, what a big problem we would face. This is a small part
+                    of the vital feature of trees in the ecosystem.
+                    Covering part of the water, soil, air pollution and fine dust crisis, reducing greenhouse gases,
+                    carbon absorption and oxygen production, reducing energy consumption in cold and hot seasons.</p>
+                <p class="text-cent">
+                    Covering part of the water, soil, air pollution and fine dust crisis, reducing greenhouse gases,
+                    carbon absorption and oxygen production, reducing energy consumption in cold and hot seasons.</p>
+                <br>
+                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Click Me?</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Contact-->
+<section class="page-section" id="contact" style="padding-bottom: 0;">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-6 col-xl-6 text-center">
+                <h2 class="mt-0">Contact Us</h2>
+                <hr class="divider"/>
+                <p class="text-muted text-cent mb-5">Ready to start your project with us? Don't hesitate to reach
+                    out:</p>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0 dark-green">
+                        <i class="bi-telephone fs-2-4 mb-3 text-cent dark-green"></i>
+                        <div class="fw-800">09111928046</div>
+                        <div class="fw-800">01155240508</div>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0 dark-green">
+                        <i class="bi-printer fs-2-4 mb-3 text-cent dark-green"></i>
+                        <div class="fw-800">Fax 01155240508</div>
+                    </div>
+                    <!--            <div class="col-lg-4 text-center mb-5 mb-lg-0">-->
+                    <!--                <i class="bi-geo fs-2 mb-3"></i>-->
+                    <!--                <div>Ramsar - Mazandaran</div>-->
+                    <!--                <div>Ramsar - Mazandaran</div>-->
+                    <!--                <div>Gilan</div>-->
+                    <!--            </div>-->
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0 dark-green">
+                        <i class="bi-instagram fs-2-4 mb-3 dark-green"></i>
+                        <div class="fw-800">@palmpardis</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p class="text-muted text-cent mb-3">or you can send us a message and we will get back to you as soon as
+                    possible: </p>
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                               data-sb-validations="required"/>
+                        <label for="name">Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                               data-sb-validations="required,email"/>
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <!--                    <div class="form-floating mb-3">-->
+                    <!--                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"-->
+                    <!--                               data-sb-validations="required"/>-->
+                    <!--                        <label for="phone">Phone number</label>-->
+                    <!--                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                                  style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br/>
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <!-- Submit Button-->
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+                <img class="img-fluid" style="margin-left: 70px; margin-top: 80px" src="{% static "img/noice.JPG" %}" alt="..."/>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="">
+    <div>
+        <img src="{% static "img/footer.png" %}" style="width: 100%;" class="img-fluid">
+    </div>
+    <div class="col-lg-12 text-center">
+        <div style="background: #c2c66f;
+        font-size: medium;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        color: #67744f;">Copyright. Palm Pardis 2024
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- SimpleLightbox plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+<!-- Core theme JS-->
+<script src="{% static "js/scripts.js" %}"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
