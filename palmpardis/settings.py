@@ -126,7 +126,7 @@ USE_TZ = True
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_ROOT = os.path.join(BASE_DIR, '/home/repositories/palmpardis/static/')
+STATIC_ROOT = os.path.join(BASE_DIR, '/home/palmpardis/public_html/static/')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
