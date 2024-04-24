@@ -133,6 +133,9 @@ STATICFILES_DIRS = (
 )
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+MEDIA_ROOT = "/home/palmpard/media.example.org/"
+MEDIA_URL = "https://palmpardis.com/"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
