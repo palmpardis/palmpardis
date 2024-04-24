@@ -133,7 +133,7 @@ STATICFILES_DIRS = (
 )
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MEDIA_ROOT = "/home/palmpard/media.example.org/"
+MEDIA_ROOT = '/home/palmpard/public_html/media'
 MEDIA_URL = "https://palmpardis.com/"
 
 # Default primary key field type
