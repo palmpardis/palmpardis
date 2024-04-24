@@ -7,5 +7,6 @@ from apps.ui import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('home/', views.home, name='casa'),
     path('under-construction/', views.under_construction, name='under-construction'),
 ]
