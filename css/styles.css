@@ -59,8 +59,8 @@
     --bs-font-sans-serif: "Noto Sans", sans-serif;
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: "Noto Sans", sans-serif;
-    --bs-body-font-size: 1rem;
+    --bs-body-font-family: "Source Sans 3", sans-serif;
+    --bs-body-font-size: 1.3rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
@@ -656,8 +656,8 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
+    /*--bs-gutter-x: 1.5rem;*/
+    /*--bs-gutter-y: 0;*/
     width: 100%;
     padding-right: calc(var(--bs-gutter-x) * 0.5);
     padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -4163,7 +4163,7 @@ textarea.form-control-lg {
 
 .navbar {
     --bs-navbar-padding-x: 0;
-    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-padding-y: 0.0rem;
     --bs-navbar-color: rgba(0, 0, 0, 0.55);
     --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
     --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
@@ -4229,6 +4229,7 @@ textarea.form-control-lg {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    font-family: var(--bs-body-font-family);
 }
 
 .navbar-nav .show > .nav-link,
@@ -4653,7 +4654,7 @@ textarea.form-control-lg {
 }
 
 .card {
-    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-y: 1.2rem;
     --bs-card-spacer-x: 1rem;
     --bs-card-title-spacer-y: 0.5rem;
     --bs-card-border-width: 1px;
@@ -4665,9 +4666,9 @@ textarea.form-control-lg {
     --bs-card-cap-padding-x: 1rem;
     --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
     --bs-card-cap-color: ;
-    --bs-card-height: ;
-    --bs-card-color: ;
-    --bs-card-bg: #fff;
+    --bs-card-height: 410px;
+    --bs-card-color: rgb(255, 255, 255);
+    --bs-card-bg: none;
     --bs-card-img-overlay-padding: 1rem;
     --bs-card-group-margin: 0.75rem;
     position: relative;
@@ -4678,7 +4679,9 @@ textarea.form-control-lg {
     word-wrap: break-word;
     background-color: var(--bs-card-bg);
     background-clip: border-box;
-    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border: 0.5px;
+    border-color: #d1e0c8;
+    border-style: solid;
     border-radius: var(--bs-card-border-radius);
 }
 
@@ -4726,6 +4729,11 @@ textarea.form-control-lg {
 
 .card-text:last-child {
     margin-bottom: 0;
+    font-size: large;
+}
+
+.card-text {
+    text-align: justify;
 }
 
 .card-link + .card-link {
@@ -12431,7 +12439,7 @@ body {
 }
 
 .page-section {
-    padding: 5.7rem 0;
+    padding: 4.2rem 0;
 }
 
 .text-white-75 {
@@ -12504,8 +12512,8 @@ hr.divider-light {
     }
 
     #mainNav .navbar-nav .nav-item .nav-link {
-        color: rgba(255, 255, 255, 0.7);
-        padding: 0 1rem;
+        color: rgba(255, 255, 255, 0.9);
+        padding: 0 2rem;
     }
 
     #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -12523,7 +12531,7 @@ hr.divider-light {
 
     #mainNav.navbar-shrink .navbar-brand {
         color: #212529;
-        background-color: forestgreen;
+        filter: invert(50%) sepia(13%) saturate(3207%) hue-rotate(90deg) brightness(80%) contrast(60%);
     }
 
     #mainNav.navbar-shrink .navbar-brand:hover {
@@ -12542,7 +12550,7 @@ hr.divider-light {
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 0, 0) 10%), url("../img/hero-min.png");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 0, 0) 10%), url("../img/ov1-narrow.JPG");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -12562,7 +12570,9 @@ header.masthead h1, header.masthead .h1 {
     }
 
     header.masthead p {
-        font-size: 1.5rem;
+        font-size: 6rem;
+        font-weight: lighter;
+        font-style: italic;
     }
 
     header.masthead h1, header.masthead .h1 {
@@ -12618,11 +12628,12 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .text-sub {
-    background: white;
-    color: yellowgreen !important;
-    mix-blend-mode: luminosity;
-    font-style: italic;
-    font-size: 1.5rem;
+    /*background: white;*/
+    /*color: yellowgreen !important;*/
+    /*mix-blend-mode: luminosity;*/
+    /*font-style: italic;*/
+    font-size: 2.5rem;
+    color: white !important;
 }
 
 .text-cent {
@@ -12630,9 +12641,71 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .dark-green {
-    color: #3b5213 !important;
+    color: #1c2f08 !important;
 }
 
 .fw-800 {
     font-weight: 600;
+}
+
+.fade-img {
+    position: relative;
+}
+
+.fade-img:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    height: 40%;
+}
+
+.bg-1 {
+    position: relative;
+    background-image: url("http://localhost:63342/palmpardis-ui/img/5.jpg");
+    color: white;
+    background-size: cover;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 600px;
+}
+
+.bg-2 {
+    position: relative;
+    background-image: url("http://localhost:63342/palmpardis-ui/img/serv-overview-narrow.jpg");
+    color: white;
+    background-size: cover;
+    background-size: 100% 100%;
+    max-height: 417px;
+    /*text-align: justify-all;*/
+    line-height: 500px;
+}
+
+.centered-fig {
+    position: relative;
+    background-image: url("http://localhost:63342/palmpardis-ui/img/sp4.jpg");
+    color: white;
+    background-size: cover;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 600px;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    bottom: 200px;
+}
+
+.text-fig {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
 }
