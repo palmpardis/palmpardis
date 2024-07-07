@@ -4679,9 +4679,8 @@ textarea.form-control-lg {
     word-wrap: break-word;
     background-color: var(--bs-card-bg);
     background-clip: border-box;
-    border: 0.5px;
-    border-color: #d1e0c8;
-    border-style: solid;
+    /*border-color: #d1e0c8;*/
+    /*border-style: solid;*/
     border-radius: var(--bs-card-border-radius);
 }
 
