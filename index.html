@@ -1,766 +1,698 @@
 <!DOCTYPE html>
-<html lang="en" style="width: 100%; height: 100%">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Palm Pardis" />
     <title>Palm Pardis</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
-    <!-- Bootstrap Icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-          rel="stylesheet" type="text/css"/>
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet"/>
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200;1,200&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-          rel="stylesheet">
-</head>
-<body id="page-top">
-<!-- Navigation-->
-<nav style="width: 100vw" class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container ">
-        <a class="navbar-brand" href="#page-top"><img src="img/Untitled(1).png" class="img-fluid" width="350"
-                                                      style="margin-top: 5px; margin-bottom: 8px;">
-            <!--            <img src="img/brand.png" class="img-fluid" width="330" style="mix-blend-mode: hard-light">-->
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive" style="margin-top: 25px;">
-            <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+
+    <link rel="stylesheet" href="/css/output.css" />
+
+    <script defer>
+      window.addEventListener("scroll", function (e) {
+        let navbar = document.querySelector("#navbar");
+        let logoFilter = document.querySelector("#logo");
+
+        if (window.pageYOffset > 2) {
+          navbar.classList.add("scrolled");
+          logoFilter.classList.add("logo");
+        } else {
+          navbar.classList.remove("scrolled");
+          logoFilter.classList.remove("logo");
+        }
+      });
+    </script>
+  </head>
+
+  <body id="home">
+    <!-- Navigation-->
+    <nav
+      id="navbar"
+      class="fixed w-full flex justify-between items-center shadow-lg transition pr-6 pl-4"
+    >
+      <a id="logo" href="#home">
+        <img
+          src="/img/webp/logo-wh.webp"
+          class="w-12 md:hidden"
+          width="48"
+          alt="Palm Pardis"
+        />
+
+        <img
+          src="/img/webp/logo.webp"
+          class="w-64 lg:w-80 hidden md:block"
+          width="320"
+          alt="Palm Pardis"
+        />
+      </a>
+
+      <div class="flex">
+        <ul class="flex">
+          <li
+            class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
+          >
+            <a class="hover:text-[#406346] active:text-[#406346]" href="#about"
+              >About</a
+            >
+          </li>
+          <li
+            class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
+          >
+            <a
+              class="hover:text-[#406346] active:text-[#406346]"
+              href="#services"
+              >Services</a
+            >
+          </li>
+          <li
+            class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
+          >
+            <a
+              class="hover:text-[#406346] active:text-[#406346]"
+              href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <select
+          name="lang"
+          id="lang"
+          aria-label="lang"
+          class="bg-transparent text-white outline-none text-base lg:text-lg"
+        >
+          <option value="en">en</option>
+          <option value="fa">fa</option>
+        </select>
+      </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="h-96 lg:h-dvh bg-header flex justify-center items-center">
+      <div class="flex flex-col items-center space-y-20">
+        <p
+          class="text-white font-normal text-[40px] lg:text-8xl lg:font-thin lg:max-w-2xl text-center italic"
+        >
+          plant a tree, plant a life
+        </p>
+        <a
+          class="bg-lime-500 hover:bg-lime-600 py-5 px-10 font-bold uppercase border-none rounded-full text-sm text-white max-w-fit"
+          href="#about"
+          >Find Out More</a
+        >
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="py-10 px-6 bg-[#406346]" id="about">
+      <article
+        class="text-white text-xl text-justify grid grid-cols-1 lg:grid-cols-2 mb-16"
+      >
+        <img
+          class="mx-auto mb-4 rounded-md h-[35rem]"
+          src="/img/webp/serv3.webp"
+          width="420"
+          height="560"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+        <div>
+          <h2 class="text-center text-2xl">About</h2>
+          <hr class="divide-y-2 my-3" />
+          <p class="text-white/75">
+            Nowadays, due to the constructions and expansion of cities, trees
+            are exposed to destruction. Paying attention to the importance of
+            the fact that trees play a very important role in preserving nature
+            and human life, made
+            <span class="text-white font-bold">Palm Pardis</span>
+            group conduct its research in order to save the trees that are in
+            the way of constructions, the boundaries of roads and highways, and
+            the trees that are planted due to the change in the type of crops.
+          </p>
+          <br />
+          <h3 class="font-semibold">
+            We can move any type of tree of any shape and size from one place to
+            another and guarantee the survival and health of that tree.
+          </h3>
         </div>
-    </div>
-</nav>
-<!-- Masthead-->
-<header class="masthead">
-    <div class="container h-100">
-        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-            <div class="col-lg-8 align-self-end">
-                <!--                <img src="img/brand.png" class="img-fluid" width="435" style="mix-blend-mode: hard-light">-->
-            </div>
-            <div class="col-lg-7 align-self-baseline">
-                <p class="text-white-75 text-bg-white text-sub">plant a tree, plant a life</p>
-                <a class="btn btn-primary btn-xl" style="background: limegreen;" href="#about">Find Out More</a>
-            </div>
+      </article>
+
+      <article
+        class="text-white text-xl text-justify grid grid-cols-1 lg:grid-cols-2"
+      >
+        <img
+          class="mx-auto mb-4 order-1 lg:order-2 rounded-md h-[35rem]"
+          src="/img/webp/serv2.webp"
+          width="420"
+          height="560"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+        <div class="order-2 lg:order-1">
+          <p class="text-white/75">
+            After
+            <span class="text-white font-bold">more than ten years</span> of
+            research, experimental work and efforts, we succeeded in acquiring
+            the necessary skills, knowledge, experience and technology to
+            transfer and save more than
+            <span class="text-white font-bold">+57,000 tree trunks</span>, among
+            them trees with a height of
+            <span class="text-white font-bold">25 meters</span> and a diameter
+            of <span class="text-white font-bold">more than 3 meters</span>,
+            some reaching the age of
+            <span class="text-white font-bold">350 years</span>. Some of these
+            trees are planted in different parts of the country and abroad with
+            different climates and continue to live.
+          </p>
+          <br />
+          <h3 class="font-bold">We are now holding a record in this regard.</h3>
         </div>
-    </div>
-</header>
+      </article>
+    </section>
 
+    <section class="pb-10 px-6 bg-[#859970] flex justify-center items-center">
+      <img
+        src="/img/gif/motionlogo-wh.gif"
+        width="300"
+        height="240"
+        loading="lazy"
+        alt="Palm Pardis"
+      />
+    </section>
 
-<!-- About -->
-<section class="page-section bg-primary" id="about" style="padding-bottom: 70px !important;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
+    <section class="py-10 px-6" id="about">
+      <article
+        class="text-white text-xl text-justify columns-1 lg:columns-3 mb-16"
+      >
+        <h2
+          class="text-center text-black/75 text-3xl font-semibold lg:mt-52 lg:grid mb-6"
+        >
+          +57,000 trees <span class="text-[#6b8e23]">survived</span>
+        </h2>
 
-            <div class="col-lg-6 text-center">
-                <img class="" src="img/serv3.jpg" width="420">
-            </div>
-            <div class="col-lg-6 text-center">
-                <h2 class="text-white mt-0">About</h2>
-                <hr class="divider divider-light"/>
-                <p class="text-white-75 mb-4 text-cent">Nowadays, due to the constructions and expansion of cities,
-                    trees are exposed to destruction. Paying attention to the importance of the fact
-                    that trees play a very important role in preserving nature and human life, made
-                    <span class="text-white fw-bold">Palm Pardis</span>
-                    group conduct its research in order to save the trees that are in the way of constructions, the
-                    boundaries of roads and highways, and the trees that are planted due to the change in the type of
-                    crops.</p>
-                <h4 class="text-white mb-4 text-cent">
-                    We can move any type of tree of any shape and size from one place to another and guarantee the
-                    survival and health of that tree.
-                </h4>
-            </div>
-            <div class="col-lg-6 text-center" style="margin-top: 50px">
-                <p class="text-white-75 mb-4 text-cent" style="padding-top: 35px">
-                    After <span class="text-white fw-bold">more than ten years</span> of research, experimental work and
-                    efforts,
-                    we succeeded in acquiring the necessary skills, knowledge, experience and
-                    technology to transfer and save more than
-                    <span class="text-white fw-bold">+57,000 tree trunks</span>, among them
-                    trees with a height of <span class="text-white fw-bold">25 meters</span> and a diameter of <span
-                        class="text-white fw-bold">more than 3 meters</span>,
-                    some reaching the age of <span class="text-white fw-bold">350 years</span>. Some of these trees are
-                    planted in different
-                    parts of the country and abroad with different climates and continue to live.
-                </p>
-                <h3 class="text-white mb-4 text-cent"> We are now holding a record in this regard.</h3>
-            </div>
-            <div class="col-lg-6 text-center" style="margin-top: 50px">
-                <img class="" src="img/serv2.jpg" width="330">
-                <!--                <img class="" src="img/nurtured2.jpg" width="500">-->
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/sheltered.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/4a.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+      </article>
 
-            </div>
+      <article
+        class="text-white text-xl text-justify columns-1 lg:columns-3 mb-16"
+      >
+        <h2
+          class="text-center text-black/75 text-3xl font-semibold mb-6 lg:hidden"
+        >
+          sheltered and <span class="text-[#6b8e23]">nurtured</span>
+        </h2>
 
-            <!--            <div class="col-lg-12 text-center" style="padding-bottom: 44px;">-->
-            <!--                <img class="" src="img/motionlogo-wh.gif" width="325" height="225">-->
-            <!--                &lt;!&ndash;                <a class="btn btn-light btn-xl" href="#services">Get Started!</a>&ndash;&gt;-->
-            <!--            </div>-->
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/4b.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/nurtured.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
 
+        <h2
+          class="text-center text-black/75 text-3xl font-semibold hidden lg:grid pt-52"
+        >
+          sheltered and <span class="text-[#6b8e23]">nurtured</span>
+        </h2>
+      </article>
+    </section>
+
+    <!-- Services -->
+    <section class="py-10 px-6 bg-[#859970] text-white" id="services">
+      <h2 class="text-center text-3xl font-semibold">Our Services</h2>
+      <hr class="divide-y-2 mt-3 mb-8 md:max-w-96 mx-auto" />
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6 lg:gap-4"
+      >
+        <article>
+          <img
+            class="mb-4 rounded-md h-60"
+            src="/img/webp/services1.webp"
+            width="420"
+            loading="lazy"
+            alt="Palm Pardis"
+          />
+
+          <h3 class="text-xl font-bold">Supplying tall trees</h3>
+
+          <p class="text-white/90 text-lg font-normal">
+            that were destroyed during construction and replacing them in place
+          </p>
+        </article>
+
+        <article>
+          <img
+            class="mb-4 rounded-md h-60"
+            src="/img/webp/2.webp"
+            width="420"
+            height="240"
+            loading="lazy"
+            alt="Palm Pardis"
+          />
+
+          <h3 class="text-xl font-bold">Supplying trees with large trunks</h3>
+
+          <p class="text-white/90 text-lg font-normal">
+            in parks, squares, streets, markets and residential and public areas
+            and changing the face of the urban green space in the shortest time
+          </p>
+        </article>
+
+        <article>
+          <img
+            class="mb-4 rounded-md h-60"
+            src="/img/webp/services3.webp"
+            width="420"
+            height="240"
+            loading="lazy"
+            alt="Palm Pardis"
+          />
+
+          <h3 class="text-xl font-bold">
+            Transferring and revitalizing old trees
+          </h3>
+
+          <p class="text-white/90 text-lg font-normal">
+            some reaching 350 years old
+          </p>
+        </article>
+
+        <article>
+          <img
+            class="mb-4 rounded-md h-60"
+            src="/img/webp/serv-fruits.webp"
+            width="420"
+            height="240"
+            loading="lazy"
+            alt="Palm Pardis"
+          />
+
+          <h3 class="text-xl font-bold">Supplying fruit trees</h3>
+
+          <p class="text-white/90 text-lg font-normal">
+            apples, pears, tropical citrus fruits, pomegranates, etc.
+          </p>
+        </article>
+
+        <article>
+          <img
+            class="mb-4 rounded-md h-60"
+            src="/img/webp/serv-narrow.webp"
+            width="420"
+            height="240"
+            loading="lazy"
+            alt="Palm Pardis"
+          />
+
+          <h3 class="text-xl font-bold">Planting selection and design</h3>
+
+          <p class="text-white/90 text-lg font-normal">
+            According to the climatic conditions and the needs available space
+            and the type of vases and materials used
+          </p>
+        </article>
+
+        <article>
+          <img
+            class="mb-4 rounded-md h-60"
+            src="/img/webp/noice2.webp"
+            width="420"
+            height="240"
+            loading="lazy"
+            alt="Palm Pardis"
+          />
+
+          <h3 class="text-xl font-bold">Protecting your vital trees</h3>
+
+          <p class="text-white/90 text-lg font-normal">
+            we can transfer them to one of the Palm Pardis collections, where
+            they are going to be recovered and kept there, and after the
+            completion of the project, we will return them to the original
+            place.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pb-10 px-6 bg-[#a1b988] flex justify-center items-center">
+      <img
+        src="/img/gif/motionlogo-rt2.gif"
+        width="300"
+        height="240"
+        loading="lazy"
+        alt="Palm Pardis"
+      />
+    </section>
+
+    <section class="py-10 px-6" id="about">
+      <article class="text-xl text-justify columns-1 lg:columns-3 mb-16">
+        <h2 class="text-black/75 text-3xl font-semibold lg:mt-52 mb-4">
+          Trees that fly, <span class="text-[#6b8e23]">but won't die</span>
+        </h2>
+
+        <p class="mb-4">
+          we move and maintain threatened and cut trees and transfer them to the
+          climate where it is supposed to live in the future
+        </p>
+
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/fly1a.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/fly1c.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+      </article>
+
+      <div class="mb-16 relative flex justify-center items-center -z-10">
+        <img
+          class="rounded-md h-[26rem] w-full"
+          src="/img/webp/serv-overview-narrow.webp"
+          height="416"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+
+        <span
+          class="absolute text-white top-6 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+          >they only move to a better place</span
+        >
+      </div>
+
+      <article class="text-xl text-justify columns-1 lg:columns-3 mb-16">
+        <h2 class="text-black/75 text-3xl font-semibold lg:mt-52 mb-4">
+          A place to call <span class="text-[#6b8e23]">home</span>
+        </h2>
+
+        <p class="mb-4">a safe place to live and grow</p>
+
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/callhome.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/sp11.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+      </article>
+
+      <article class="text-xl text-justify columns-1 lg:columns-3 mb-16">
+        <h2 class="text-black/75 text-3xl font-semibold mb-4 lg:hidden">
+          where they will be <span class="text-[#6b8e23]">cared for</span>
+        </h2>
+        <p class="mb-4 lg:hidden">using latest knowledge and technology</p>
+
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/serv.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/serrv.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+
+        <h2 class="text-black/75 text-3xl font-semibold hidden lg:block pt-52">
+          where they will be <span class="text-[#6b8e23]">cared for</span>
+        </h2>
+
+        <p class="mb-4 hidden lg:block">
+          using latest knowledge and technology
+        </p>
+      </article>
+
+      <article class="text-xl text-justify columns-1 lg:columns-3 mb-16">
+        <h2 class="text-black/75 text-3xl font-semibold lg:mt-52 mb-4">
+          And maybe they meet some
+          <span class="text-[#6b8e23]">special</span> new friends...
+        </h2>
+
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/sp3.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+        <img
+          class="mx-auto mb-4 rounded-md h-[36rem]"
+          src="/img/webp/sp8.webp"
+          width="450"
+          height="576"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+      </article>
+
+      <div class="mb-16 relative flex justify-center items-center -z-10">
+        <img
+          class="rounded-md h-[26rem] w-full"
+          src="/img/webp/sp4.webp"
+          height="416"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+
+        <span
+          class="absolute text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+          >in the
+          <span class="text-[#adff2f]"> trees hospital</span>
+        </span>
+      </div>
+    </section>
+
+    <section class="py-10 px-6 bg-[#03210a] text-white columns-1 lg:columns-3">
+      <div class="text-justify mb-6">
+        <h3 class="font-semibold text-xl mb-4">
+          A mature tree produces oxygen for 3 people in a year
+        </h3>
+        <p class="font-normal text-base">
+          If we were to pay for the oxygen consumption, what a big problem we
+          would face. This is a small part of the vital feature of trees in the
+          ecosystem. Covering part of the water, soil, air pollution and fine
+          dust crisis, reducing greenhouse gases, carbon absorption and oxygen
+          production.
+        </p>
+      </div>
+
+      <img
+        class="rounded-md h-[20rem] mb-6 mx-auto"
+        src="/img/webp/circle2.webp"
+        height="320"
+        width="460"
+        loading="lazy"
+        alt="Palm Pardis"
+      />
+
+      <div class="text-justify">
+        <p class="font-normal text-base mb-4">
+          It's time to use more large and rooted trees in the development of
+          urban green spaces while planting young saplings without roots. We
+          move threatened trees and transfer them to the climate where it's
+          supposed to live in the future.
+        </p>
+
+        <h3 class="font-semibold text-xl">
+          Moving barrier trees in projects and selling them is common in the
+          world.
+        </h3>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-10 px-6 columns-1 lg:columns-2 mx-auto" id="contact">
+      <div class="max-w-[460px] lg:max-w-[580px] mx-auto mb-8">
+        <h2 class="text-center text-3xl font-semibold">Contact Us</h2>
+        <hr class="divide-y-4 divide-black mt-3 mb-4 md:max-w-96 mx-auto" />
+
+        <p class="text-black/90 text-justify mb-3">
+          Ready to start your project with us? Don't hesitate to reach out:
+        </p>
+
+        <div class="columns-1 lg:columns-3">
+          <div
+            class="flex justify-center items-center flex-col font-medium text-lg mb-8"
+          >
+            <img
+              src="/svg/phone-call.svg"
+              width="34"
+              alt="Palm Pardis Phone"
+              loading="lazy"
+              class="mb-2"
+            />
+            <a href="tel:09111928046">09111928046</a>
+            <a href="tel:01155240508">01155240508</a>
+          </div>
+
+          <div
+            class="flex justify-center items-center flex-col font-medium text-lg mb-8"
+          >
+            <img
+              src="/svg/printer.svg"
+              width="34"
+              alt="Palm Pardis Phone"
+              loading="lazy"
+              class="mb-2"
+            />
+            <span>Fax 01155240508</span>
+          </div>
+
+          <div
+            class="flex justify-center items-center flex-col font-medium text-lg"
+          >
+            <img
+              src="/svg/instagram.svg"
+              width="34"
+              alt="Palm Pardis Phone"
+              loading="lazy"
+              class="mb-2"
+            />
+            <a href="https://instagram.com/palmpardis" target="_blank"
+              >@palmpardis</a
+            >
+          </div>
         </div>
-    </div>
-</section>
-<section class="page-section bg-secondary" id="motion1" style="padding: 0 !important;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-12 text-center" style="">
-                <img class="" src="img/motionlogo-wh.gif" width="300" height="240">
-                <!--                <a class="btn btn-light btn-xl" href="#services">Get Started!</a>-->
-            </div>
+      </div>
 
-        </div>
-    </div>
-</section>
+      <div
+        class="max-w-[460px] lg:max-w-[580px] mx-auto bg-[#6f8c35] text-white font-medium text-lg p-6 rounded-md mb-8"
+      >
+        <img
+          src="/svg/location.svg"
+          width="34"
+          class="mb-4 text-white mx-auto"
+          loading="lazy"
+          alt="Palm Pardis Phone"
+        />
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=37.206485081697856, 50.002687261935485"
+          target="_blank"
+          class="block my-1"
+          >1: Gilan - Chabokstar to Lahijan road (KM 4)</a
+        >
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=36.92679556972519, 50.642966159929976"
+          target="_blank"
+          class="block my-1"
+          >2: Mazandaran - Ramsar - Katalem</a
+        >
 
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=36.94267829670641, 50.65939704668308"
+          target="_blank"
+          class="block my-1"
+          >3: Mazandaran - Ramsar - Niyasteh</a
+        >
+      </div>
 
-<!-- First Section -->
-<section class="page-section">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-4 col-md-4 text-center">
-                <h2 class="mt-0" style="padding-top: 180px !important;">+57,000 trees
-                    <span style="color: olivedrab;">survived</span></h2>
-                <!--                <hr class="divider"/>-->
-                <!--                <p class="mb-4 text-cent">After years of experience, efforts and research, this group-->
-                <!--                    managed to-->
-                <!--                    save and return to the environment 25 meters high and 3 meters diameter and 350 years old trees that-->
-                <!--                    were threatened and destroyed. Now, he is proud to transport any type of tree and any size from one-->
-                <!--                    place to another and guarantee the survival and health of that tree.</p>-->
-                <!--                <p class="mb-4 text-cent">After more than ten years of research, experimental work and efforts, we-->
-                <!--                    succeeded in acquiring the necessary skills, knowledge, experience and technology to transfer-->
-                <!--                    and save about 18,000 trees. Among them, we found trees with a height of 25 meters and a diameter-->
-                <!--                    of more than 3 meters and an age of 350 years. We are the record holder in this regard.</p>-->
-                <!--                <img src="img/noice2.jpg" height="500">-->
-                <!--                <a class="btn btn-light btn-xl" href="#services">Get Started!</a>-->
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <img class="fade-img" src="img/sheltered.jpg" height="450">
-                <!--                <img class="fade-img" src="img/noice2.jpg" height="333">-->
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <img class="fade-img" src="img/4a.jpg" height="450">
-            </div>
+      <div
+        class="max-w-[460px] mx-auto border rounded border-gray-100 py-4 px-3 shadow-xl"
+      >
+        <p class="text-black/75 text-justify mb-3">
+          You can send us a message and we will get back to you as soon as
+          possible:
+        </p>
+        <form>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            class="border p-2 rounded w-full mb-4"
+            placeholder="Full Name"
+            required
+          />
 
-        </div>
-    </div>
-</section>
-<section class="page-section" style="padding-top: 0 !important;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/4b.jpg" style="max-height: 465px;" alt="..."/>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/nurtured.jpg" height="450" alt="..."/>
-                    <!--                    <img class="img-fluid" src="img/DJI_0200.jpg" width="1000" height="1000" alt="..."/>-->
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <h2 class="mt-0" style="padding-top: 160px !important;">
-                        sheltered and
-                        <span style="color: olivedrab;">nurtured</span></h2>
-                    <div class="row gx-4 gx-lg-5">
-                        <div class="col-lg-12 col-md-12 text-center">
-                            <div class="mt-5">
-                                <!--                                    <p class="text-muted text-cent mb-0">-->
-                                <!--                                        Nowadays, due to the constructions and-->
-                                <!--                                        expansion of cities, trees are exposed to destruction and destruction. Paying-->
-                                <!--                                        attention to the importance of the issue that trees play a very important role-->
-                                <!--                                        in preserving nature and human life, made the Palm campus group conduct its-->
-                                <!--                                        research to save the trees that are in the way of constructions, the boundaries-->
-                                <!--                                        of roads and highways, and the trees that were planted due to the change in the-->
-                                <!--                                        type of crops. (including fruitful and non-fruitful trees) or change of use and-->
-                                <!--                                        division of inheritance in gardens that are subject to destruction.-->
-                                <!--                                    </p>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="border p-2 rounded w-full mb-4"
+            placeholder="Email Address"
+            required
+          />
 
-    </div>
-</section>
+          <textarea
+            name="message"
+            id="message"
+            class="border p-2 rounded w-full mb-4 resize-none"
+            rows="6"
+            placeholder="Enter your message here..."
+            required
+          ></textarea>
+        </form>
+      </div>
+    </section>
 
-<!-- Services-->
-<section class="page-section bg-secondary" id="services">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-12 col-md-12 text-center bg-secondary">
-                <div class="mt-5">
-                    <h2 class="text-center text-white mt-0">Our Services</h2>
-                    <hr class="divider" style="color: #406346;"/>
-                    <div class="row gx-4 gx-lg-5">
-                        <div class="col-lg-12 col-md-12 text-center">
-                            <div class="mt-5">
-                                <!--                                    <p class="text-white text-cent mb-0">Our wide range of services include but are not-->
-                                <!--                                        limited to:</p>-->
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="card">
-                                            <img src="img/services1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="text-cent fw-bold mb-2">Supplying tall trees</h5>
-                                                <p class="card-text">that were destroyed during construction and
-                                                    replacing them in place</p>
-                                                <!--                                                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="card">
-                                            <img src="img/2.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="text-cent fw-bold mb-2">Supplying trees with large
-                                                    trunks</h5>
-                                                <p class="card-text">in parks, squares, streets, markets and residential
-                                                    and public areas and changing the face of the urban green space in
-                                                    the shortest time</p>
-                                                <!--                                                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="card">
-                                            <img src="img/services3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Transferring and revitalizing old trees</h5>
-                                                <p class="card-text">some reaching 350 years old</p>
-                                                <!--                                                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="card">
-                                            <img src="img/serv-fruits.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Supplying fruit trees</h5>
-                                                <p class="card-text">apples, pears, tropical citrus fruits,
-                                                    pomegranates, etc.</p>
-                                                <!--                                                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="card">
-                                            <img src="img/serv-narrow.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Planting selection and design</h5>
-                                                <p class="card-text">
-                                                    According to the climatic conditions and the needs available space
-                                                    and the type of vases and
-                                                    materials used</p>
-                                                <!--                                                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="card">
-                                            <img src="img/noice2.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Protecting your vital trees </h5>
-                                                <p class="card-text">we can transfer them to one of the Palm Pardis
-                                                    collections, where they are going to be recovered and kept there,
-                                                    and after the completion of the project, we will return them to the
-                                                    original place.
-                                                </p>
-                                                <!--                                                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--                                    <p class="text-white text-cent mb-0">-->
-                                <!--                                        Supplying tall trees (between 50-400) - Supplying and planting large-->
-                                <!--                                        trees in parks, squares, streets, markets and residential and public areas and-->
-                                <!--                                        changing the face of urban green spaces In the shortest time - moving,-->
-                                <!--                                        transferring, growing and reviving old trees - saving part of the trees that are-->
-                                <!--                                        at risk of destruction due to construction and turning it into a new opportunity-->
-                                <!--                                        to continue life at the national level and in different climates. Having further-->
-                                <!--                                        questions about our services?</p>-->
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Portfolio-->
-<!--<section class="page-section bg-secondary" id="services">-->
-<!--    <div class="container ">-->
-<!--        <div class="row gx-4 gx-lg-5">-->
-<!--            <div class="col-lg-12 col-md-12 text-center">-->
-<!--                <div id="portfolio">-->
-<!--                    <div class="container-fluid p-0">-->
-<!--                        <div class="row g-0">-->
-<!--                            <div class="col-lg-3 col-sm-6">-->
-<!--                                <a class="portfolio-box" href="img/sp10.jpg" title="Project Name">-->
-<!--                                    <img class="img-fluid" src="img/sp10.jpg" alt="..."/>-->
-<!--                                    <div class="portfolio-box-caption">-->
-<!--                                        <div class="project-category text-white-50">Category</div>-->
-<!--                                        <div class="project-name">Project Name</div>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="col-lg-3 col-sm-6">-->
-<!--                                <a class="portfolio-box" href="img/sp9.jpg" title="Project Name">-->
-<!--                                    <img class="img-fluid" src="img/sp9.jpg" alt="..."/>-->
-<!--                                    <div class="portfolio-box-caption">-->
-<!--                                        <div class="project-category text-white-50">Category</div>-->
-<!--                                        <div class="project-name">Project Name</div>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="col-lg-3 col-sm-6">-->
-<!--                                <a class="portfolio-box" href="img/sp3.jpg" title="Project Name">-->
-<!--                                    <img class="img-fluid" src="img/sp3.jpg" alt="..."/>-->
-<!--                                    <div class="portfolio-box-caption">-->
-<!--                                        <div class="project-category text-white-50">Category</div>-->
-<!--                                        <div class="project-name">Project Name</div>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="col-lg-3 col-sm-6">-->
-<!--                                <a class="portfolio-box" href="img/sp11.jpg" title="Project Name">-->
-<!--                                    <img class="img-fluid" src="img/sp11.jpg" alt="..."/>-->
-<!--                                    <div class="portfolio-box-caption">-->
-<!--                                        <div class="project-category text-white-50">Category</div>-->
-<!--                                        <div class="project-name">Project Name</div>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="col-lg-3 col-sm-6">-->
-<!--                                <a class="portfolio-box" href="img/sp5.jpg" title="Project Name">-->
-<!--                                    <img class="img-fluid" src="img/sp5.jpg" alt="..."/>-->
-<!--                                    <div class="portfolio-box-caption">-->
-<!--                                        <div class="project-category text-white-50">Category</div>-->
-<!--                                        <div class="project-name">Project Name</div>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="col-lg-3 col-sm-6">-->
-<!--                                <a class="portfolio-box" href="img/sp6.jpg" title="Project Name">-->
-<!--                                    <img class="img-fluid" src="img/sp6.jpg" alt="..."/>-->
-<!--                                    <div class="portfolio-box-caption p-3">-->
-<!--                                        <div class="project-category text-white-50">Category</div>-->
-<!--                                        <div class="project-name">Project Name</div>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<section class="page-section" id="motion2"
-         style="padding: 20px !important; padding-top:0 !important; background: #a1b988">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-12 col-md-12 text-center" style="padding: 0 !important;">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/motionlogo-rt2.gif" height="300" width="300">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="page-section" style="padding-bottom: 30px;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-4 col-md-4 text-center" style="padding-top: 70px;">
-                <div class="mt-5">
-                    <div class="row gx-4 gx-lg-5">
-                        <div class="col-lg-12 col-md-12 text-center">
-                            <div class="mt-5">
-                                <h5 class="text-cent fw-bold h3 mb-2">
-                                    <span style="color: olivedrab;">Trees that fly,</span>
-                                    but won't die
-                                </h5>
-                                <p class="text-cent mb-0">
-                                    we move and maintain threatened and cut trees and transfer them to the climate
-                                    where it is supposed to live in the future
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/fly1a.jpg" style="max-height: 550px" alt="..."/>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/fly1c.jpg" style="max-height: 445px" alt="..."/>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="page-section" id="services3" style="padding-bottom: 0 !important; padding-top: 0 !important;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-12 col-md-12 text-center">
-                <div class="mt-5 bg-2">
-                    <div class="text">
-                        <span style="color: #f3f1ed;">they only move to a better place</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="page-section" id="services4" style="padding-top: 50px !important; padding-bottom: 30px;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <div class="row gx-4 gx-lg-5">
-                        <div class="col-lg-12 col-md-12 text-center">
-                            <div class="mt-5" style="padding-top: 55px;">
-                                <h5 class="text-cent fw-bold h3 mb-2">a place to call <span
-                                        style="color: olivedrab; font-size: xx-large;">home</span></h5>
-                                <p class="text-cent mb-0">
-                                    a safe place to live and grow
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/callhome.jpg" style="max-height: 465px" alt="..."/>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/sp11.jpg" style="max-height: 600px" alt="..."/>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="page-section" id="services5" style="padding-bottom: 0 !important; padding-top: 0 !important;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/serv.jpg" style="max-height: 485px" alt="..."/>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/serrv.jpg" style="max-height: 500px" alt="..."/>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center" style="padding-top: 130px;">
-                <div class="mt-5">
-                    <!--                        <h2 class="text-center mt-0 text-dark" style="color: #03210a;">+17,000 trees survived</h2>-->
-                    <!--                        <hr class="divider"/>-->
-                    <div class="row gx-4 gx-lg-5">
-                        <div class="col-lg-12 col-md-12 text-center">
-                            <div class="mt-5">
-                                <h5 class="text-cent fw-bold h3 mb-2">where they will be <span
-                                        style="color: olivedrab;">cared for</span></h5>
-                                <p class="text-cent mb-0">
-                                    using latest knowledge and technology
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="page-section" id="services6" style="padding-bottom: 10px; padding-top: 40px;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-4 col-md-4 text-center" style="padding-top: 70px !important;">
-                <div class="mt-5">
-                    <!--                        <h2 class="text-center mt-0 text-dark" style="color: #03210a;">+17,000 trees survived</h2>-->
-                    <!--                        <hr class="divider"/>-->
-                    <div class="row gx-4 gx-lg-5">
-                        <div class="col-lg-12 col-md-12 text-center">
-                            <div class="mt-5">
-                                <h5 class="text-cent fw-bold h3 mb-2">and maybe they meet some <span
-                                        style="color: olivedrab">special</span> new friends...</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/sp3.jpg" style="max-height: 480px" alt="..."/>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/sp8.jpg" style="max-height: 465px" alt="..."/>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="page-section" id="services7"
-         style="padding-top: 1.5rem !important; margin-bottom: 40px; padding-bottom: 50px">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-12 col-md-12 text-center">
-                <div class="mt-5 centered-fig">
-                    <div class="text-fig">
-                        <span style="color: #f3f1ed;">in the </span><span
-                            style="color: greenyellow; font-size: xxx-large"> trees hospital</span>
-                        <!--                        <span style="color: #f3f1ed; font-size: x-large">each having stories to tell..</span>-->
-                        <!--                        <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Contact Us</a>-->
-                    </div>
-
-                    <!--                    <img class="img-fluid" src="img/overview.png" height="500" alt="..."/>-->
-                </div>
-            </div>
-            <!--            <div class="col-lg-6 col-md-6 text-center">-->
-            <!--                <div class="mt-5">-->
-            <!--                    &lt;!&ndash;                        <h2 class="text-center mt-0">17,000 trees survived</h2>&ndash;&gt;-->
-            <!--                    &lt;!&ndash;                        <hr class="divider"/>&ndash;&gt;-->
-            <!--                    <p style="padding-top: 150px !important;" class="text-dark text-cent fw-bold h3 mb-2">A mature tree-->
-            <!--                        produces oxygen for-->
-            <!--                        three people in a year</p>-->
-            <!--                    <div class="row gx-4 gx-lg-5">-->
-            <!--                        <div class="col-lg-12 col-md-12 text-center">-->
-            <!--                            <div class="mt-5">-->
-            <!--                                &lt;!&ndash;                                    <p class="text-muted text-cent mb-0">&ndash;&gt;-->
-            <!--                                &lt;!&ndash;                                        Nowadays, due to the constructions and&ndash;&gt;-->
-            <!--                                &lt;!&ndash;                                        expansion of cities, trees are exposed to destruction and destruction. Paying&ndash;&gt;-->
-            <!--                                &lt;!&ndash;                                        attention to the importance of the issue that trees play a very important role&ndash;&gt;-->
-            <!--                                &lt;!&ndash;                                        in preserving nature and human life, made the Palm campus group conduct its&ndash;&gt;-->
-            <!--                                &lt;!&ndash;                                        research to save the trees that are in the way of constructions, the boundaries&ndash;&gt;-->
-            <!--                                &lt;!&ndash;                                        of roads and highways, and the trees that were planted due to the change in the&ndash;&gt;-->
-            <!--                                &lt;!&ndash;                                        type of crops. (including fruitful and non-fruitful trees) or change of use and&ndash;&gt;-->
-            <!--                                &lt;!&ndash;                                        division of inheritance in gardens that are subject to destruction.&ndash;&gt;-->
-            <!--                                &lt;!&ndash;                                    </p>&ndash;&gt;-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-        </div>
-
-    </div>
-</section>
-
-
-<section class="page-section bg-dark text-white">
-    <div class="container  text-center">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-4 col-xl-4 text-center">
-                <!--                <h2 class="text-center mt-0">Oxygen Consumption</h2>-->
-                <!--                <hr class="divider divider-light"/>-->
-                <h3 class="text-cent">A mature tree produces oxygen for 3 people in a year</h3>
-                <p class="text-cent">
-                    If we were to pay for the oxygen consumption, what a big problem we would face. This is a small part
-                    of the vital feature of trees in the ecosystem. Covering part of the water, soil, air pollution and
-                    fine dust crisis, reducing greenhouse gases, carbon absorption and oxygen production.</p>
-                <!--                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Click Me?</a>-->
-            </div>
-
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="mt-5">
-                    <img class="img-fluid" src="img/circle2.png" alt="..."/>
-                </div>
-            </div>
-            <div class="col-lg-4 col-xl-4 text-center">
-                <!--                <h2 class="text-center mt-0">Oxygen Consumption</h2>-->
-                <!--                <hr class="divider divider-light"/>-->
-                <p class="text-cent">It's time to use more large and rooted trees in the development of urban green
-                    spaces while planting young saplings without roots. We move threatened trees
-                    and transfer them to the climate where it's supposed to live in the future.
-                <h3 class="text-cent">Moving barrier trees in projects and selling them is common in the world.</h3>
-
-                <!--                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Click Me?</a>-->
-            </div>
-
-        </div>
-    </div>
-
-</section>
-
-<section class="page-section" id="services2" style="padding-bottom: 0 !important; padding-top: 0 !important;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-12 col-md-12 text-center">
-                <div class="mt-5">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Gallery -->
-
-<!-- Contact-->
-<section class="page-section" id="contact" style="padding-bottom: 0;">
-    <div class="container ">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-6 col-xl-6 text-center">
-                <h2 class="mt-0">Contact Us</h2>
-                <hr class="divider"/>
-                <p class="text-muted text-cent mb-3">Ready to start your project with us? Don't hesitate to reach
-                    out:</p>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-3 mb-lg-0 dark-green">
-                        <i class="bi-telephone fs-2-4 mb-3 text-cent dark-green"></i>
-                        <div class="fw-400">09111928046</div>
-                        <div class="fw-400">01155240508</div>
-                    </div>
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0 dark-green">
-                        <i class="bi-printer fs-2-4 mb-3 text-cent dark-green"></i>
-                        <div class="fw-400">Fax 01155240508</div>
-                    </div>
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0 dark-green">
-                        <i class="bi-instagram fs-2-4 mb-3 dark-green"></i>
-                        <div class="fw-400">@palmpardis</div>
-                    </div>
-                    <div class="col-lg-12 text-center mb-5 mb-lg-0 text-white"
-                         style="margin-top: 20px; background: #6f8c35; padding:10px">
-                        <i class="bi bi-geo-alt fs-2-4 mb-3 text-white" style="font-size: xxx-large !important;"></i>
-                        <div class="fw-400">1: Gilan - Chabokstar to Lahijan road (KM 4)</div>
-                        <div class="fw-400">2: Mazandaran - Ramsar - Katalem</div>
-                        <div class="fw-400">3: Mazandaran - Ramsar - Niyasteh</div>
-                    </div>
-                </div>
-                <br>
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4 col-md-6 text-center" style="
-                                                border-style: solid;
-                                                border-color: lightgray;
-                                                border-width: 2px;
-                                                border-radius: 10px;">
-                <p class="text-muted text-cent mb-3" style="padding-top: 20px;">You can send us a message and we will get back to you as soon as
-                    possible: </p>
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <!-- Name input-->
-                    <div class="form-floating mb-2">
-                        <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                               data-sb-validations="required"/>
-                        <label for="name">Name</label>
-                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                    </div>
-                    <!-- Email address input-->
-                    <div class="form-floating mb-2">
-                        <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                               data-sb-validations="required,email"/>
-                        <label for="email">Email address</label>
-                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                    </div>
-                    <!-- Phone number input-->
-                    <!--                    <div class="form-floating mb-3">-->
-                    <!--                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"-->
-                    <!--                               data-sb-validations="required"/>-->
-                    <!--                        <label for="phone">Phone number</label>-->
-                    <!--                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <!-- Message input-->
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
-                                  style="height: 10rem" data-sb-validations="required"></textarea>
-                        <label for="message">Message</label>
-                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br/>
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage">
-                        <div class="text-center text-danger mb-3">Error sending message!</div>
-                    </div>
-                    <!-- Submit Button-->
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <br>
-        <br>
-    </div>
-</section>
-<!-- Footer-->
-<footer class="">
-    <div>
-        <img src="img/footer.png" style="width: 100%" class="img-fluid">
-    </div>
-    <div class="col-lg-12 text-center">
-        <div style="background: #485409;
-        margin-top: 2px;
-
-        color: white;"><img src="img/logo-wh.png" height="50">
-            <span style="font-size: medium">Palm Pardis 2024, All Rights Reserved</span>
-        </div>
-    </div>
-</footer>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- SimpleLightbox plugin JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<!-- * *                               SB Forms JS                               * *-->
-<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-</body>
+    <footer>
+      <img
+        class="w-full max-h-48"
+        src="/img/webp/footer.webp"
+        loading="lazy"
+        alt="Palm Pardis"
+      />
+      <div
+        class="flex items-center justify-center bg-[#485409] text-white border-t-2"
+      >
+        <img
+          class="h-12"
+          src="/img/webp/logo-wh.webp"
+          loading="lazy"
+          alt="Palm Pardis"
+        />
+        <span>Palm Pardis 2024, All Rights Reserved</span>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    filter: invert(50%) sepia(13%) saturate(3207%) hue-rotate(90deg) brightness(80%) contrast(60%);
+}
+
+#navbar {
+    background-color: transparent;
+}
+
+#navbar li {
+    color: aliceblue;
+}
+
+#navbar.scrolled {
+    background-color: white;
+}
+
+#navbar.scrolled li {
+    color: #212529;
+}
+
+#navbar.scrolled select {
+    color: #212529;
+}
+
+.bg-header {
+    background: linear-gradient(
+            to bottom,
+            rgba(92, 77, 66, 0.8) 0%,
+            rgba(92, 77, 0, 0) 10%
+          ),
+          url('../img/webp/home.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
