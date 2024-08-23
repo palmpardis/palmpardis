@@ -22,61 +22,65 @@
     <!-- Navigation-->
     <nav
       id="navbar"
-      class="fixed w-full flex justify-between items-center shadow-lg transition pr-6 pl-4"
+      class="fixed w-full flex justify-center shadow-lg transition pr-6 pl-4"
     >
-      <a id="logo" href="#home">
-        <img
-          src="./img/webp/logo-wh.webp"
-          class="w-12 md:hidden"
-          width="48"
-          alt="Palm Pardis"
-        />
+      <div class="container flex justify-between items-center">
+        <a id="logo" href="#home" class="my-4">
+          <img
+            src="./img/webp/logo-wh.webp"
+            class="w-14 md:hidden"
+            width="48"
+            alt="Palm Pardis"
+          />
 
-        <img
-          src="./img/webp/logo.webp"
-          class="w-64 lg:w-80 hidden md:block"
-          width="320"
-          alt="Palm Pardis"
-        />
-      </a>
+          <img
+            src="./img/webp/logo.webp"
+            class="w-64 lg:w-[350px] hidden md:block"
+            width="320"
+            alt="Palm Pardis"
+          />
+        </a>
 
-      <div class="flex">
-        <ul class="flex">
-          <li
-            class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
-          >
-            <a class="hover:text-[#406346] active:text-[#406346]" href="#about"
-              >About</a
+        <div class="flex">
+          <ul class="flex">
+            <li
+              class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
             >
-          </li>
-          <li
-            class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
-          >
-            <a
-              class="hover:text-[#406346] active:text-[#406346]"
-              href="#services"
-              >Services</a
+              <a
+                class="hover:text-[#406346] active:text-[#406346]"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li
+              class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
             >
-          </li>
-          <li
-            class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
-          >
-            <a
-              class="hover:text-[#406346] active:text-[#406346]"
-              href="#contact"
-              >Contact</a
+              <a
+                class="hover:text-[#406346] active:text-[#406346]"
+                href="#services"
+                >Services</a
+              >
+            </li>
+            <li
+              class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
             >
-          </li>
-        </ul>
-        <select
-          name="lang"
-          id="lang"
-          aria-label="lang"
-          class="bg-transparent text-white outline-none text-base lg:text-lg"
-        >
-          <option value="en" selected>en</option>
-          <option value="fa">fa</option>
-        </select>
+              <a
+                class="hover:text-[#406346] active:text-[#406346]"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <select
+            name="lang"
+            id="lang"
+            aria-label="lang"
+            class="bg-transparent text-white outline-none text-base lg:text-lg"
+          >
+            <option value="en" selected>en</option>
+            <option value="fa">fa</option>
+          </select>
+        </div>
       </div>
     </nav>
 
