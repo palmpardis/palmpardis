@@ -42,3 +42,21 @@ html {
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
+
+.bg-place {
+    background: url("../img/webp/serv-overview-narrow.webp");
+    height: 417px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.bg-trees {
+    background: url("../img/webp/sp4.webp");
+    height: 620px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
