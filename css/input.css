@@ -2,8 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'IRANSansX';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansX-Regular.woff2')
+        format('woff2')
+}
+
+@font-face {
+    font-family: 'IRANSansX';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/IRANSansX-Bold.woff2')
+        format('woff2')
+  }
+
 html {
     scroll-behavior: smooth;
+}
+
+html:lang(fa) {
+    font-family: "IRANSansX" !important;
 }
 
 .logo {
