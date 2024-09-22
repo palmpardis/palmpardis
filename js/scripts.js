@@ -2,7 +2,7 @@ appLoad();
 
 function appLoad() {
   emailjs.init({
-    publicKey: "r2IDO4f27YdTO0KRV",
+    publicKey: "t0QyWq2xHcc_OFwU5",
   });
 
   let selectLang = document.querySelector("#lang");
@@ -50,7 +50,7 @@ function onSubmitForm(e) {
 
   form.submit.setAttribute("disabled", true);
 
-  emailjs.sendForm("service_s4t4stf", "template_1tg8otl", "#form").then(
+  emailjs.sendForm("service_yib78sa", "template_t3i6yu5", "#form").then(
     (response) => {
       if (document.documentElement.lang === "fa") {
         alert("پیام شما با موفقیت ارسال شد.");
