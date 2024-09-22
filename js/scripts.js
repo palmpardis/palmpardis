@@ -53,9 +53,9 @@ function onSubmitForm(e) {
   emailjs.sendForm("service_s4t4stf", "template_1tg8otl", "#form").then(
     (response) => {
       if (document.documentElement.lang === "fa") {
-        alert("ایمیل با موفقیت ارسال شد");
+        alert("پیام شما با موفقیت ارسال شد.");
       } else {
-        alert("email successfully sent");
+        alert("Your message has been sent successfully.");
       }
 
       form.submit.removeAttribute("disabled");
@@ -63,9 +63,9 @@ function onSubmitForm(e) {
     },
     (error) => {
       if (document.documentElement.lang === "fa") {
-        alert("خطا در ارسال اطلاعات");
+        alert("خطا در ارسال پیام. لطفا دوباره تلاش کنید.");
       } else {
-        alert("FAILED...");
+        alert("Failed to send your message. Please try again.");
       }
 
       form.submit.removeAttribute("disabled");
