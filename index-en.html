@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="جابجایی و انتقال درختان"/>
-    <title>پالم پردیس</title>
+    <meta name="description" content="Palm Pardis"/>
+    <title>Palm Pardis</title>
 
     <link rel="icon" type="image/x-icon" href="./img/favicon.png"/>
 
@@ -25,48 +25,6 @@
         class="fixed w-full flex justify-center shadow-lg transition"
 >
     <div class="container flex justify-between items-center">
-        <div class="flex navbar-link-fa">
-            <select
-                    name="lang"
-                    id="lang"
-                    aria-label="lang"
-                    class="bg-transparent text-white outline-none text-base lg:text-lg"
-                    dir="rtl"
-            >
-                <option value="en" selected>en</option>
-                <option value="fa">fa</option>
-            </select>
-            <ul class="flex navbar-link-ul" dir="rtl">
-                <li
-                        class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
-                >
-                    <a
-                            class="hover:text-[#406346] active:text-[#406346]"
-                            href="#about"
-                    >درباره ما</a>
-                </li>
-                <li
-                        class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
-                >
-                    <a
-                            class="hover:text-[#406346] active:text-[#406346]"
-                            href="#services"
-                    >خدمات</a
-                    >
-                </li>
-                <li
-                        class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
-                >
-                    <a
-                            class="hover:text-[#406346] active:text-[#406346]"
-                            href="#contact"
-                    >تماس با ما</a
-                    >
-                </li>
-            </ul>
-
-        </div>
-
         <a id="logo" href="#home" class="my-4">
             <img
                     src="./img/webp/logo-wh.webp"
@@ -76,13 +34,53 @@
             />
 
             <img
-                    src="./img/webp/logo-fa.png"
+                    src="./img/webp/logo.webp"
                     class="w-64 lg:w-[350px] hidden md:block"
                     width="320"
                     alt="Palm Pardis"
             />
         </a>
 
+        <div class="flex navbar-link">
+            <ul class="flex navbar-link-ul">
+                <li
+                        class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
+                >
+                    <a
+                            class="hover:text-[#406346] active:text-[#406346]"
+                            href="#about"
+                    >About</a
+                    >
+                </li>
+                <li
+                        class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
+                >
+                    <a
+                            class="hover:text-[#406346] active:text-[#406346]"
+                            href="#services"
+                    >Services</a
+                    >
+                </li>
+                <li
+                        class="pt-3 pb-3 mr-3 font-bold text-base lg:text-lg cursor-pointer"
+                >
+                    <a
+                            class="hover:text-[#406346] active:text-[#406346]"
+                            href="#contact"
+                    >Contact</a
+                    >
+                </li>
+            </ul>
+            <select
+                    name="lang"
+                    id="lang"
+                    aria-label="lang"
+                    class="bg-transparent text-white outline-none text-base lg:text-lg"
+            >
+                <option value="en" selected>en</option>
+                <option value="fa">fa</option>
+            </select>
+        </div>
     </div>
 </nav>
 
@@ -90,20 +88,14 @@
 <header class="h-96 lg:h-dvh bg-header flex justify-center items-center">
     <div class="flex flex-col items-center hero-center">
         <p
-                class="text-white font-normal text-[40px] lg:text-8xl lg:font-thin lg:max-w-2xl text-center italic hero-text"
+                class="text-white font-normal text-[40px] lg:text-8xl lg:font-thin lg:max-w-2xl text-center italic"
         >
-            درختانی که
-        </p>
-        <p
-                class="text-white font-normal text-[40px] lg:text-8xl lg:font-thin lg:max-w-2xl text-center italic hero-text"
-                style="color: #94e814;"
-        >
-            پرواز می‌کنند
+            trees that fly, but won't die
         </p>
         <a
-                class="bg-[#32cd32] py-5 px-10 font-bold uppercase border-none rounded-full text-sm text-white max-w-fit hero-button-fa"
+                class="bg-[#32cd32] py-5 px-10 font-bold uppercase border-none rounded-full text-sm text-white max-w-fit hero-button"
                 href="#about"
-        >بیشتر بدانید</a
+        >Find Out More</a
         >
     </div>
 </header>
@@ -121,21 +113,25 @@
                 loading="lazy"
                 alt="Palm Pardis"
         />
-        <div dir="rtl" class="about-desc-a">
-            <h2 class="text-center text-2xl font-semibold">درباره ما</h2>
+        <div class="about-desc-a">
+            <h2 class="text-center text-2xl font-semibold">About</h2>
             <hr class="my-3 max-w-16 border-t-2 mx-auto"/>
 
             <p class="text-white/75 ">
-                امروزه به دلیل ساخت و سازها و گسترش شهرها، درختان در معرض تخریب و نابودی قرار گرفته اند. توجه به اهمیت
-                این موضوع که درختان نقش بسیارمهمی در حفظ طبیعت و زندگی انسانها دارند، موجب شد تا مجموعه‌ی
-                <span class="text-white font-bold">پالم پردیس</span>
-                تحقیقات خود را جهت نجات درختانی که در مسیر ساخت و ساز ها، حریم جاده ها اتوبان ها، درختانی که بواسطه
-                تغییر نوع کشت ( شامل درختان مثمر و غیر مثمر) یا تغییر کاربری و تقسیم ارث در باغات در معرض نابودی قرار
-                میگیرند را شروع نماید.
+                Nowadays, due to the constructions and expansion of cities, trees
+                are exposed to destruction. Paying attention to the importance of
+                the fact that trees play a very important role in preserving nature
+                and human life, made
+                <span class="text-white font-bold">Palm Pardis</span>
+                group conduct its research in order to save the trees that are in
+                the way of constructions, the boundaries of roads and highways, and
+                the trees that are planted due to the change in the type of crops.
             </p>
             <br/>
-            <h2 class="font-bold text-2xl">پالم پردیس اکنون مفتخر است هر نوع درختی و با هر بن و سایزی را از مکانی به
-                مکان دیگر منتقل و زنده ماندن و سلامت آن درخت را تضمین نماید.</h2>
+            <h3 class="font-semibold text-2xl">
+                We can move any type of tree of any shape and size from one place to
+                another and guarantee the survival and health of that tree.
+            </h3>
         </div>
     </article>
 
@@ -150,24 +146,26 @@
                 loading="lazy"
                 alt="Palm Pardis"
         />
-        <div class="order-2 lg:order-1 about-desc-b" dir="rtl">
+        <div class="order-2 lg:order-1 about-desc-b">
             <p class="text-white/75">
-                پس از گذشت
-                <span class="text-white font-bold">بیش از ده سال</span>
-                کار تحقیقی، تجربی و تلاش ما موفق به کسب مهارت ، دانش، تجربه و تکنولوژی لازم جهت انتقال و نجات بیش از
-                <span class="text-white font-bold">۵۷,۰۰۰ اصله درخت </span>
-                شدیم که در میان آنها درختانی به ارتفاع
-                <span class="text-white font-bold">۲۵ متر</span>
-                و همچنین قطر
-
-                <span class="text-white font-bold">بیش از ۳ متر</span>
-                و سن
-                <span class="text-white font-bold">۳۵۰ سال</span>
-                رسیدیم که بخشی از این درختان در نقاط مختلف کشور و خارج از کشور با اقلیم متفاوت کاشته شده و ادامه حیات
-                میدهند.
+                After
+                <span class="text-white font-bold">more than ten years</span> of
+                research, experimental work and efforts, we succeeded in acquiring
+                the necessary skills, knowledge, experience and technology to
+                transfer and save more than
+                <span class="text-white font-bold">+57,000 tree trunks</span>, among
+                them trees with a height of
+                <span class="text-white font-bold">25 meters</span> and a diameter
+                of <span class="text-white font-bold">more than 3 meters</span>,
+                some reaching the age of
+                <span class="text-white font-bold">350 years</span>. Some of these
+                trees are planted in different parts of the country and abroad with
+                different climates and continue to live.
             </p>
             <br/>
-            <h2 class="font-bold text-2xl"> هم اکنون از این حیث ما رکورد دار هستیم.</h2>
+            <h3 class="font-bold text-2xl">
+                We are now holding a record in this regard.
+            </h3>
         </div>
     </article>
 </section>
@@ -189,7 +187,7 @@
         <h2
                 class="text-center text-black/75 text-3xl font-semibold lg:mt-52 lg:grid mb-6"
         >
-            بیش از ۵۷,۰۰۰ درخت <span class="text-[#6b8e23]">نجات یافته</span>
+            +57,000 trees <span class="text-[#6b8e23]">survived</span>
         </h2>
 
         <img
@@ -216,7 +214,7 @@
         <h2
                 class="mx-auto text-center text-black/75 text-3xl font-semibold mb-6 lg:hidden"
         >
-            درختانی که پناه گرفته و <span class="text-[#6b8e23]">پرورش یافته اند</span>
+            sheltered and <span class="text-[#6b8e23]">nurtured</span>
         </h2>
 
         <img
@@ -231,21 +229,20 @@
         <h2
                 class="text-center text-black/75 text-3xl font-semibold hidden lg:block pt-52 w-[34%] 2xl:w-[36%]"
         >
-            درختانی که پناه گرفته و <span class="text-[#6b8e23]">پرورش یافته اند</span>
+            sheltered and <span class="text-[#6b8e23]">nurtured</span>
         </h2>
     </article>
 </section>
 
 <!-- Services -->
 <section class="py-10 px-6 bg-[#859970] text-white" id="services">
-    <h2 class="text-center text-3xl font-semibold">خدمات ما</h2>
+    <h2 class="text-center text-3xl font-semibold">Our Services</h2>
     <hr
             class="my-3 max-w-20 border-t-4 mx-auto mb-10 mt-4 border-[#406346]"
     />
 
     <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 container mx-auto"
-            dir="rtl"
     >
         <article class="mb-8">
             <img
@@ -256,10 +253,10 @@
                     alt="Palm Pardis"
             />
 
-            <h3 class="text-xl font-bold">تامین درختان با بن بالا (بین ۵۰ تا ۴۰۰)</h3>
+            <h3 class="text-xl font-bold">Supplying tall trees</h3>
 
             <p class="text-white/90 text-lg font-normal">
-                که حین ساخت و ساز از بین رفته‌اند و جایگزین کردن آنها در محل
+                that were destroyed during construction and replacing them in place
             </p>
         </article>
 
@@ -273,10 +270,12 @@
                     alt="Palm Pardis"
             />
 
-            <h3 class="text-xl font-bold"> تامین و کاشت درختان بزرگ</h3>
+            <h3 class="text-xl font-bold">Supplying trees with large trunks</h3>
 
-            <p class="text-white/90 text-lg font-normal">در پارک ها، میادین، خیابان‌ها، بازارها و مناطق مسکونی و عمومی و
-                تغییر چهره فضای سبز شهری در کوتاهترین زمان</p>
+            <p class="text-white/90 text-lg font-normal">
+                in parks, squares, streets, markets and residential and public areas
+                and changing the face of the urban green space in the shortest time
+            </p>
         </article>
 
         <article class="mb-8">
@@ -290,11 +289,11 @@
             />
 
             <h3 class="text-xl font-bold">
-                جابجایی، انتقال، پرورش و احیای درختان کهنسال
+                Transferring and revitalizing old trees
             </h3>
 
             <p class="text-white/90 text-lg font-normal">
-                بعضی با عمر بیش از ۳۵۰ سال
+                some reaching 350 years old
             </p>
         </article>
 
@@ -308,10 +307,10 @@
                     alt="Palm Pardis"
             />
 
-            <h3 class="text-xl font-bold">تامین درختان میوه</h3>
+            <h3 class="text-xl font-bold">Supplying fruit trees</h3>
 
             <p class="text-white/90 text-lg font-normal">
-                سیب، گلابی، مرکبات، انار، استوایی و...
+                apples, pears, tropical citrus fruits, pomegranates, etc.
             </p>
         </article>
 
@@ -325,12 +324,11 @@
                     alt="Palm Pardis"
             />
 
-            <h3 class="text-xl font-bold">طراحیِ کاشت و انتخاب گونه‌های گیاهی</h3>
+            <h3 class="text-xl font-bold">Planting selection and design</h3>
 
             <p class="text-white/90 text-lg font-normal">
-                صاحب‌نظر در انتخاب گونه گیاهی با توجه به شرایط اقلیمی و نیاز طراحان با استفاده از دانش باغبانی – طراحی و
-                انتخاب گونه‌های
-                گیاهی با توجه به شرایط اقلیمی و کاشت آنها
+                According to the climatic conditions and the needs available space
+                and the type of vases and materials used
             </p>
         </article>
 
@@ -344,11 +342,14 @@
                     alt="Palm Pardis"
             />
 
-            <h3 class="text-xl font-bold">حفظ درختان حیاتی شما</h3>
+            <h3 class="text-xl font-bold">Protecting your vital trees</h3>
 
-            <p class="text-white/90 text-lg font-normal">در هنگام عملیات ساخت و ساز، ما میتوانیم آنها را به یکی از
-                مجموعه‌های پالم پردیس منتقل کرده (به محلی که قراره ریکاوری یا بازآوری شده و در اونجا نگهداری شوند) و
-                بعد از اتمام پروژه به محل اصلی بازمی‌گردانیم.</p>
+            <p class="text-white/90 text-lg font-normal">
+                we can transfer them to one of the Palm Pardis collections, where
+                they are going to be recovered and kept there, and after the
+                completion of the project, we will return them to the original
+                place.
+            </p>
         </article>
     </div>
 </section>
@@ -363,18 +364,17 @@
     />
 </section>
 
-<section class="py-10 px-6" dir="rtl">
+<section class="py-10 px-6">
     <article
             class="text-xl text-justify columns-1 lg:columns-3 mb-16 container mx-auto"
     >
         <h2 class="text-black/75 text-3xl font-semibold lg:mt-52 mb-4">
-            درختانی که پرواز می کنند،
-            <span class="text-[#6b8e23]">اما نمی میرند</span>
+            Trees that fly, <span class="text-[#6b8e23]">but won't die</span>
         </h2>
 
         <p class="mb-4">
-            درختان در معرض تهدید و خطر قطع را جابجا و نگهداری می کنیم و منتقل می‌کنیم به اقلیمی که قرار است در
-            آینده در آن زندگی کنند.
+            we move and maintain threatened and cut trees and transfer them to the
+            climate where it is supposed to live in the future
         </p>
 
         <img
@@ -401,7 +401,7 @@
         <span
                 class="absolute text-white top-6 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl"
                 style="padding-top: 40px;"
-        >آنها فقط به مکان بهتری منتقل میشوند</span
+        >they only move to a better place</span
         >
     </div>
 
@@ -411,10 +411,10 @@
         <h2
                 class="text-black/75 text-3xl font-semibold lg:mt-52 mb-4 text-center"
         >
-            جایی مثل یک <span class="text-[#6b8e23]">خانه</span>
+            A place to call <span class="text-[#6b8e23]">home</span>
         </h2>
 
-        <p class="mb-4 text-center">جایی برای زندگی جدید و رشد بهتر</p>
+        <p class="mb-4 text-center">a safe place to live and grow</p>
 
         <img
                 class="mx-auto mb-4 rounded-md h-[34rem]"
@@ -438,11 +438,9 @@
             class="text-xl text-justify columns-1 lg:columns-3 mb-16 container mx-auto"
     >
         <h2 class="text-black/75 text-3xl font-semibold mb-4 lg:hidden text-center">
-            جایی که از آنها <span class="text-[#6b8e23]"> مراقبت میشود</span>
+            a place where they will be <span class="text-[#6b8e23]">cared for</span>
         </h2>
-        <p class="mb-4 lg:hidden text-center">
-            با بهره گیری از به روزترین دانش و فناوری
-        </p>
+        <p class="mb-4 lg:hidden text-center">using latest knowledge and technology</p>
 
         <img
                 class="mx-auto mb-4 rounded-md h-[34rem]"
@@ -462,11 +460,11 @@
         />
 
         <h2 class="text-black/75 text-3xl font-semibold hidden lg:block pt-52 text-center">
-            جایی که از آنها <span class="text-[#6b8e23]"> مراقبت میشود</span>
+            a place where they will be <span class="text-[#6b8e23]">cared for</span>
         </h2>
 
         <p class="mb-4 hidden lg:block text-center">
-            با بهره گیری از به روزترین دانش و فناوری
+            using latest knowledge and technology
         </p>
     </article>
 
@@ -474,11 +472,8 @@
             class="text-xl text-justify columns-1 lg:columns-3 mb-16 container mx-auto"
     >
         <h2 class="text-black/75 text-3xl font-semibold lg:mt-52 mb-4">
-            و شاید آنها با
-            <span class="text-[#6b8e23]"> دوستان جدید  </span>
-            و
-            <span class="text-[#6b8e23]">خاصی  </span>
-            آشنا شوند...
+            and maybe they meet some
+            <span class="text-[#6b8e23]">special</span> new friends...
         </h2>
 
         <img
@@ -504,23 +499,24 @@
     >
         <span
                 class="absolute text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl hospital-txt"
-        >در
-          <span class="text-[#adff2f] hospital-txt"> بیمارستان درختان</span>
+        >in the
+          <span class="text-[#adff2f] hospital-txt"> trees hospital</span>
         </span>
     </div>
 </section>
 
-<section class="py-10 px-6 bg-[#03210a] text-white" dir="rtl">
+<section class="py-10 px-6 bg-[#03210a] text-white">
     <div class="columns-1 lg:columns-3 container mx-auto oxygen">
         <div class="text-justify mb-6">
-            <h2 class="font-semibold text-2xl mb-4">
-                یک درخت بالغ برای سه انسان در طول یک سال اکسیژن تولید میکند.
-            </h2>
+            <h3 class="font-semibold text-2xl mb-4">
+                A mature tree produces oxygen for 3 people in a year
+            </h3>
             <p class="font-normal text-xl">
-                اگر قرار بود برای اکسیژن مصرفی پول پرداخت میکردیم، با چه دردسربزرگی روبرو می‌شدیم. این بخش کوچکی از
-                ویژگی حیاتی درختان در اکوسیستم می‌باشد:
-                پوشش بخشی از بحران آب، خاک، آلودگی هوا و ریزگرد، کاهش گازهای گلخانه ای ، جذب کربن و تولید اکسیژن، کم
-                کردن میزان مصرف انرژی در فصول سرد و گرم
+                If we were to pay for the oxygen consumption, what a big problem we
+                would face. This is a small part of the vital feature of trees in
+                the ecosystem. Covering part of the water, soil, air pollution and
+                fine dust crisis, reducing greenhouse gases, carbon absorption and
+                oxygen production.
             </p>
         </div>
 
@@ -535,30 +531,28 @@
 
         <div class="text-justify">
             <p class="font-normal text-xl mb-4">
-                وقت آن رسیده است که ضمن کاشتن نهال‌های جوان بی ریشه در توسعه فضای سبز شهری از درختان بزرگ و ریشه دار
-                بیشتری بهره ببریم. ما درختان در معرض تهدید وقطع رو جابجا و نگهداری می‌کنیم و منتقل می‌کنیم به اقلیمی که
-                قرار است در آینده ئر آن زندگی کنند.
+                It's time to use more large and rooted trees in the development of
+                urban green spaces while planting young saplings without roots. We
+                move threatened trees and transfer them to the climate where it's
+                supposed to live in the future.
             </p>
 
-            <h2 class="font-semibold text-2xl">
-                جابجایی و انتقال درختان مانع در پروژه ها و فروش آنها در دنیا رایج است.
-            </h2>
+            <h3 class="font-semibold text-2xl">
+                Moving barrier trees in projects and selling them is common in the
+                world.
+            </h3>
         </div>
     </div>
 </section>
 
 <!-- Contact -->
-<section
-        class="py-10 px-6 columns-1 lg:columns-2 mx-auto"
-        id="contact"
-        dir="rtl"
->
-    <div class="max-w-[460px] lg:max-w-[580px] mr-auto ml-0 mb-8">
-        <h2 class="text-center text-3xl font-semibold">تماس با ما</h2>
+<section class="py-10 px-6 columns-1 lg:columns-2 mx-auto" id="contact">
+    <div class="max-w-[460px] lg:max-w-[580px] ml-auto mr-0 mb-8">
+        <h2 class="text-center text-3xl font-semibold">Contact Us</h2>
         <hr class="my-3 max-w-20 border-t-[3px] mx-auto border-[#406346]"/>
 
         <p class="mb-6 text-center text-[#2c442a] font-normal text-xl" style="padding-top: 15px;">
-            برای شروع پروژه خود با پالم پردیس آماده اید؟ با ما تماس بگیرید:
+            Ready to start your project with us? Don't hesitate to reach out:
         </p>
 
         <div class="columns-1 lg:columns-3 text-[#2c442a]">
@@ -572,8 +566,8 @@
                         loading="lazy"
                         class="mb-2 contact-icon"
                 />
-                <a href="tel:09111928046">۰۹۱۱۱۹۲۸۰۴۶</a>
-                <a href="tel:01155240508">۰۱۱۵۵۲۴۰۵۰۸</a>
+                <a href="tel:09111928046">09111928046</a>
+                <a href="tel:01155240508">01155240508</a>
             </div>
 
             <div
@@ -586,8 +580,7 @@
                         loading="lazy"
                         class="mb-2 contact-icon"
                 />
-
-                <a href="tel:01155240508"> فکس ۰۱۱۵۵۲۴۰۵۰۸</a>
+                <span>Fax 01155240508</span>
             </div>
 
             <div
@@ -601,14 +594,14 @@
                         class="mb-2 contact-icon"
                 />
                 <a href="https://instagram.com/palmpardis" target="_blank"
-                >پالم پردیس</a
+                >@palmpardis</a
                 >
             </div>
         </div>
     </div>
 
     <div
-            class="max-w-[460px] lg:max-w-[580px] mr-auto ml-0 bg-[#6f8c35] text-white font-medium text-lg p-6 rounded-md mb-8 text-center"
+            class="max-w-[460px] lg:max-w-[580px] ml-auto mr-0 bg-[#6f8c35] text-white font-medium text-lg p-6 rounded-md mb-8 text-center"
     >
         <img
                 src="./svg/location.svg"
@@ -621,54 +614,55 @@
                 href="https://www.google.com/maps/dir/?api=1&destination=37.206485081697856, 50.002687261935485"
                 target="_blank"
                 class="block my-1"
-        >۱: گیلان - کیلومتر 4 چابکسر به لاهیجان</a
+        >1: Gilan - Chabokstar to Lahijan road (KM 4)</a
         >
         <a
                 href="https://www.google.com/maps/dir/?api=1&destination=36.87692879304127, 50.74282341725457"
                 target="_blank"
                 class="block my-1"
-        >۲: مازندران - رامسر - کتالم</a
+        >2: Mazandaran - Ramsar - Katalem</a
         >
 
         <a
                 href="https://www.google.com/maps/dir/?api=1&destination=36.87692879304127, 50.74282341725457"
                 target="_blank"
                 class="block my-1"
-        >۳: مازندران - رامسر - نیاسته</a
+        >3: Mazandaran - Ramsar - Niyasteh</a
         >
     </div>
 
     <div
             class="max-w-[460px] mx-auto border rounded border-gray-100 py-4 px-3 shadow-xl"
     >
-        <p class="text-[#2c442a] text-justify font-normal text-xl mb-4 contact-form-txt" style="padding-top: 15px;">
-            به ما پیام دهید و ما در اسرع وقت با شما تماس خواهیم گرفت:
+        <p class="text-[#2c442a] text-justify font-normal text-xl mb-4 contact-form-txt">
+            You can send us a message and we will get back to you as soon as
+            possible:
         </p>
         <form id="form">
             <input
                     type="text"
-                    name="From"
+                    name="name"
                     id="From"
                     class="border p-2 rounded w-full mb-4"
-                    placeholder="نام کامل"
+                    placeholder="Full Name"
                     required
             />
 
             <input
                     type="email"
-                    name="Email"
+                    name="email"
                     id="Email"
                     class="border p-2 rounded w-full mb-4"
-                    placeholder="آدرس ایمیل"
+                    placeholder="Email Address"
                     required
             />
 
             <textarea
-                    name="Message"
+                    name="message"
                     id="Message"
                     class="border p-2 rounded w-full mb-4 resize-none"
                     rows="6"
-                    placeholder="پیام خود را اینجا بنویسید ..."
+                    placeholder="Enter your message here..."
                     required
             ></textarea>
 
@@ -676,7 +670,7 @@
                     class="rounded-full bg-[#406346] text-white w-full py-5 px-9 disabled:bg-[#76a77e] hover:bg-[#99dd6f]"
                     id="submit"
             >
-                ارسال
+                SUBMIT
             </button>
         </form>
     </div>
@@ -692,13 +686,13 @@
     <div
             class="flex items-center justify-center bg-[#485409] text-white border-t-2"
     >
-        <span>تمامی حقوق این وبسایت متعلق به پالم پردیس میباشد</span>
         <img
                 class="h-12"
                 src="./img/webp/logo-wh.webp"
                 loading="lazy"
                 alt="Palm Pardis"
         />
+        <span>Palm Pardis 2024, All Rights Reserved</span>
     </div>
 </footer>
 </body>

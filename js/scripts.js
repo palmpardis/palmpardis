@@ -39,9 +39,9 @@ function changeLang(e) {
   localStorage.setItem("lang", lang);
 
   if (lang === "fa") {
-    window.location.replace("/index-fa.html");
-  } else {
     window.location.replace("/index.html");
+  } else {
+    window.location.replace("/index-en.html");
   }
 }
 
